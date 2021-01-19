@@ -1,4 +1,44 @@
 
+## 20/01/2021
+# Outra coisa
+
+teste
+```javascript
+const flip = (d, a) => {
+    if (d == "R") {
+        for (i = 0; i < a.length; i++) {
+            for (j = 0; j < a.length; j++) {
+                if (a[j] > a[j + 1]) {
+                    temp = a[j + 1];
+                    a[j + 1] = a[j];
+                    a[j] = temp;
+                };
+            }
+        }
+    }else if (d == "L") {
+        for (i = 0; i < a.length; i++) {
+            for (j = 0; j < a.length; j++) {
+                if (a[j] < a[j + 1]) {
+                    temp = a[j + 1];
+                    a[j + 1] = a[j];
+                    a[j] = temp;
+                };
+            }
+        }
+    }
+    else{
+        return
+    }
+    return a;
+}
+```
+
+
+
+
+
+
+
 ## 19/01/2021
 # JavaScript Array sort() Method
 
