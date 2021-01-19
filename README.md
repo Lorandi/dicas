@@ -33,9 +33,9 @@ const flip = (d, a) => {
 }
 ```
 
-
-.
 ---
+
+
 
 ## 19/01/2021
 # JavaScript Array sort() Method
