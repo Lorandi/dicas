@@ -24,7 +24,7 @@ points.sort((a, b)=>b-a);// [ 100, 40, 25, 10, 5, 1 ]
 
 ```javascript
 const ordenado = (a) => {
-    console.log(a);                                     // [ 'constituição', 'anel', 'músculo', 'oi', 'pedra', 'zumb', 'casa' ]
+    console.log(a);                                     //[ 'constituição', 'anel', 'músculo', 'oi', 'pedra', 'zumb', 'casa' ]
     console.log(a.sort());                              //[ 'anel', 'casa', 'constituição', 'músculo', 'oi', 'pedra', 'zumb' ]
     console.log(a.sort((a, b) => a.length - b.length)); //[ 'oi', 'anel', 'casa', 'zumb', 'pedra', 'músculo', 'constituição' ]
 }
