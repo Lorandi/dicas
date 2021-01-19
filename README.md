@@ -32,6 +32,16 @@ ordenado([ "constituição", "anel", "músculo", "oi", "pedra", "zumb", "casa"])
 
 ```
 
+```javascript
+const flip=(d, a)=>{
+    if(d === 'R') return console.log(a.sort((a,b)=>a-b));
+    if(d === 'L') return console.log(a.sort((a,b)=>b-a));
+}
+
+flip('R', [95,43,1,23,100,13,200,55]); //[1, 13,  23,  43, 55, 95, 100, 200]
+flip('L', [95,43,1,23,100,13,200,55])  //[200, 100, 95, 55, 43,  23, 13,  1]
+```
+
 https://www.w3schools.com/jsref/jsref_sort.asp
 
 https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/sort
