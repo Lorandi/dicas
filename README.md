@@ -1,4 +1,35 @@
 
+---
+---
+## 20/01/2021
+# Arrow functions
+```javascript
+hello = () => {
+  return "Hello World!";
+  }
+  console.log(hello()); //Hello World!
+}
+```
+
+```javascript
+hello = () => "Hello World!"; // Return value by default
+console.log(hello()); //Hello World!
+```
+
+```javascript
+hello = (a,b) => a + b; //parâmetros vão dentro do parênteses
+console.log(hello ("Hello"," World")); //Hello World!
+```
+
+```javascript
+hello = a => a + " World"; //se tive apenas um parâmetro, não precisa parênteses
+console.log(hello ("Hello")); //Hello World!
+```
+
+https://www.w3schools.com/js/js_arrow_function.asp
+
+https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Functions/Arrow_functions
+
 
 ---
 ---
