@@ -2,7 +2,7 @@
 ---
 ---
 ## 20/01/2021
-# Split(), reverse () e join()
+# Split(), reverse (), join() e slice()
 ```javascript
 function solution(str){    
     reverse = str.split('')     //separa letras da string em  um array com vírgulas
@@ -61,6 +61,23 @@ console.log(elements.join('-'));  //"Fire-Air-Water"
 
 ```
 https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/join
+#
+### String.prototype.slice()
+The slice() method extracts a section of a string and returns it as a new string, without modifying the original string.
+Quando só tem um parametro, exclui apenas aquela section. Quando tem dois, a section é um intervalo: slice(inicio,fim).
+
+```javascript
+function removeChar(inicio,fim){
+    str = '1234567890'        
+    return str.slice(inicio,fim);
+};
+console.log(removeChar(0));     //1234567890
+console.log(removeChar(-3,-1)); //89
+console.log(removeChar(2));     //34567890
+console.log(removeChar(1,-1));  //23456789
+console.log(removeChar(0,3));   //123
+```
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/slice
 
 ---
 # Arrow functions
