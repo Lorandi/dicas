@@ -2,6 +2,67 @@
 ---
 ---
 ## 20/01/2021
+# Split(), reverse () e join()
+```javascript
+function solution(str){    
+    reverse = str.split('')     //separa letras da string em  um array com vírgulas
+    console.log(reverse);       //[ 'W', 'o', 'r', 'l', 'd' ]
+    
+    reverse =reverse.reverse(); //inverte a ordem dos elementos do array
+    console.log(reverse);       //[ 'd', 'l', 'r', 'o', 'W' ]
+    
+    reverse =reverse.join('');  //junta os elementos, retirando as vírgulas. Poderia por qualquer coisa entre as ''. 
+    console.log(reverse);       //dlroW
+    return reverse;             //dlroW
+    
+    //return str.split('').reverse().join('');  //dlroW
+}
+
+console.log(solution("World"))
+```
+#
+### String.prototype.split()
+O método split() divide uma String em uma lista ordenada de substrings, coloca essas substrings em um array e retorna o array. A divisão é feita procurando um padrão, onde o padrão é fornecido como o primeiro parâmetro na chamada do método.
+
+```javascript
+const string= 'João'
+const split1 = string.split()
+const split2 = string.split("")
+
+console.log(string); //João
+console.log(split1); //[ 'João' ]
+console.log(split2); //[ 'J', 'o', 'ã', 'o' ]
+```
+https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/String/split
+#
+### Array.prototype.reverse()
+O método reverse() inverte os itens de um array. O primeiro elemento do array se torna o último e o último torna-se o primeiro.
+```javascript
+var myArray = ['one', 'two', 'three'];
+myArray.reverse();
+
+console.log(myArray) // ['three', 'two', 'one']
+```
+https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/reverse
+#
+### Array.prototype.join()
+O método join() junta todos os elementos de um array (ou um array-like object) em uma string e retorna esta string.
+
+**Separador:** Específica uma string para separar cada elemento adjacente do array. O separador é convertido em uma string se necessário. Se omitido, os elementos do array são separados com uma vírgula (","). Se o separador for uma string vazia, todos os elementos são juntados sem nenhum caracter entre eles.
+
+```javascript
+const elements = ['Fire', 'Air', 'Water'];
+
+console.log(elements.join());     //"Fire,Air,Water"
+
+console.log(elements.join(''));   //"FireAirWater"
+
+console.log(elements.join('-'));  //"Fire-Air-Water"
+
+```
+https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/join
+
+---
 # Arrow functions
 ```javascript
 hello = () => {
@@ -55,11 +116,11 @@ points.sort((a, b)=>b-a);// [ 100, 40, 25, 10, 5, 1 ]
 
 ```javascript
 const ordenado = (a) => {
-    console.log(a);                                     //[ 'constituição', 'anel', 'músculo', 'oi', 'pedra', 'zumb', 'casa' ]
-    console.log(a.sort());                              //[ 'anel', 'casa', 'constituição', 'músculo', 'oi', 'pedra', 'zumb' ]
-    console.log(a.sort((a, b) => a.length - b.length)); //[ 'oi', 'anel', 'casa', 'zumb', 'pedra', 'músculo', 'constituição' ]
+    console.log(a);                                     //[ 'constituição', 'anel', 'músculo', 'oi',  'zumb', 'casa' ]
+    console.log(a.sort());                              //[ 'anel', 'casa', 'constituição', 'músculo', 'oi', 'zumb' ]
+    console.log(a.sort((a, b) => a.length - b.length)); //[ 'oi', 'anel', 'casa', 'zumb', 'músculo', 'constituição' ]
 }
-ordenado([ "constituição", "anel", "músculo", "oi", "pedra", "zumb", "casa"])
+ordenado([ "constituição", "anel", "músculo", "oi", "zumb", "casa"])
 
 ```
 
