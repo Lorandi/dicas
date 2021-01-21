@@ -1,7 +1,7 @@
 ---
 ---
 ## 21/01/2021
-# Array reduce() Method
+# reduce() 
 **Syntax** `array.reduce(function(total, currentValue, currentIndex, arr), initialValue)`
 
 Sendo os dois primeiros necessários e os dois outros opcionais.
