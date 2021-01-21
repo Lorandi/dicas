@@ -2,12 +2,25 @@
 ---
 ## 21/01/2021
 # .filter(Boolean)
-Retira de uma lista os elementos que são 'falsos' como empty string, undefined, null ou false.
+Retira de uma lista os elementos que são falsy como empty string, undefined, null ou false.
+O método filter() cria um novo array com todos os elementos que passaram no teste implementado pela função fornecida.
+**Sintaxe:** `var newArray = arr.filter(callback[, thisArg])`
 ```javascript
-var arrayBugado = [undefined, "bom", null, 5, true, "certo", "errado", false ];
+var arrayBugado = [undefined, "bom", null, 5, true, "certo", "errado", false,NaN ];
 var arrayArrumado = arrayBugado.filter(Boolean);
 console.log(arrayArrumado) //[ 'bom', 5, true, 'certo', 'errado' ]
 ```
+
+```javascript
+function isBigEnough(value) {
+  return value >= 10;
+}
+var filtered = [12, 5, 8, 130, 44].filter(isBigEnough);
+// filtered is [12, 130, 44]
+```
+https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/filtro
+
+https://www.michaeluloth.com/filter-boolean
 
 #
 
