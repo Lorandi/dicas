@@ -1,6 +1,27 @@
 ---
 ---
 ## 21/01/2021
+# Array reduce() Method
+**Syntax** `array.reduce(function(total, currentValue, currentIndex, arr), initialValue)`
+
+Sendo os dois primeiros necessários e os dois outros opcionais.
+
+O método reduce() executa uma função reducer (fornecida por você) para cada elemento do array, resultando num único valor de retorno.
+
+```javascript
+const array1 = [1, 2, 3, 4];
+const reducer = (accumulator, currentValue) => accumulator + currentValue;
+
+console.log(array1.reduce(reducer)); //10
+
+console.log(array1.reduce(reducer, 5)); //esse 5 que aparece é o valor inicial que será somado ao acumulador
+// expected output: 15
+```
+https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce
+
+https://www.w3schools.com/jsref/jsref_reduce.asp
+
+#
 # .filter(Boolean)
 Retira de uma lista os elementos que são falsy como empty string, undefined, null ou false.
 O método filter() cria um novo array com todos os elementos que passaram no teste implementado pela função fornecida.
