@@ -8,7 +8,6 @@ The **Set** constructor lets you create `set()` objects that store ***unique*** 
 
 ```javascript
 function newArray(array){
-    //let set = new Set(array);
     return set = [...new Set(array)];  //usa [... Set()] para retornar só o array.
                                        //Se não usar aparece Set{elementos do array}  
 }
