@@ -1,8 +1,28 @@
 ---
 ---
 ## 21/01/2021
+# typeof
+O operador typeof retorna uma string indicando o tipo de um operando
+`"undefined", "object", "boolean", "number", "string", "function"`
+
+```javascript
+typeof 3.14 === 'number';
+typeof true === 'boolean';
+typeof "bla" === 'string';
+```
+```javascript
+function problem(x){
+    return typeof x == 'string' ? 'Error' : (x * 50 + 6);
+}
+  console.log(problem(1));       //56
+  console.log(problem(5));       //256  
+  console.log(problem("Olá"));   //'Error'
+  ´´´
+#
+
 # Set() constructor
-The **Set** constructor lets you create `set()` objects that store ***unique*** values of any type, whether primitive values or object references.
+The **Set** constructor lets you create `set()` objects that store ***unique*** values of any
+type, whether primitive values or object references.
 **Syntax**
 `new Set([iterable])`
 
