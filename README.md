@@ -1,3 +1,21 @@
+---
+---
+## 21/01/2021
+# Set() constructor
+The **Set** constructor lets you create `set()` objects that store ***unique*** values of any type, whether primitive values or object references.
+**Syntax**
+`new Set([iterable])`
+
+```javascript
+function newArray(array){
+    //let set = new Set(array);
+    return set = [...new Set(array)];  //usa [... Set()] para retornar só o array.
+                                       //Se não usar aparece Set{elementos do array}  
+}
+console.log(newArray([0, 1,1,1 ,2, 3,4,4,4, 5])) //[ 0, 1, 2, 3, 4, 5 ]
+console.log(newArray(["cavalo","cavalo","pato", "galinha", "cão","cão"])); //[ 'cavalo', 'pato', 'galinha', 'cão' ]
+```
+
 
 ---
 ---
