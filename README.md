@@ -18,7 +18,9 @@ console.log(array1.reduce(reducer, 5)); //esse 5 que aparece é o valor inicial 
 // expected output: 15
 ```
 https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce
+
 https://www.w3schools.com/jsref/jsref_reduce.asp
+
 https://www.lewagon.com/pt-BR/blog/array-reduce-aprenda-usar-metodo-javascript
 
 #
