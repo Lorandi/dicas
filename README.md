@@ -2,6 +2,7 @@
 ---
 ## 21/01/2021
 #.filter(Boolean)
+
 Retira de uma lista os elementos que são 'falsos' como empty string, undefined, null ou false.
 ```javascript
 var arrayBugado = [undefined, "bom", null, 5, true, "certo", "errado", false ];
