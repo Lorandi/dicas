@@ -125,12 +125,26 @@ console.log(hello ("Hello")); //Hello World!
 https://www.w3schools.com/js/js_arrow_function.asp
 
 https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Functions/Arrow_functions
+#
+# Ternary Operator
+**Syntax**
+`variablename = (condition) ? value1:value2 `
+O operador condicional (ternário) é o único operador JavaScript que possui três operandos. Este operador é frequentemente usado como um atalho para a instrução if.
+```javascript
+const even_or_odd = number => number % 2 == 0 ? "Even" : "Odd";
+console.log(even_or_odd(33)) // - 1 - Odd
+console.log(even_or_odd(2))  // - 0 - Even
+console.log(even_or_odd(0))  // - 0 - Even
+```
+https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Operators/Operador_Condicional
 
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator
 
 ---
 ---
 
 ## 19/01/2021
+
 # JavaScript Array sort() Method
 
 ```javascript
