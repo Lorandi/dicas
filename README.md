@@ -10,6 +10,7 @@ typeof 3.14 === 'number';
 typeof true === 'boolean';
 typeof "bla" === 'string';
 ```
+
 ```javascript
 function problem(x){
     return typeof x == 'string' ? 'Error' : (x * 50 + 6);
@@ -17,7 +18,8 @@ function problem(x){
   console.log(problem(1));       //56
   console.log(problem(5));       //256  
   console.log(problem("Olá"));   //'Error'
-  ´´´
+```
+
 #
 
 # Set() constructor
