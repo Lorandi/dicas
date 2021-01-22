@@ -1,5 +1,27 @@
 ---
 ---
+
+## 21/01/2021
+# reval() 
+A função eval() computa um código JavaScript representado como uma string.
+Se você construir uma expressão aritmética como uma string, você pode usar eval() para calcular o resultado depois.
+Se o argumento de eval() não é uma string, eval() retorna o argumento inalterado. No exemplo a seguir, o construtor String é especificado, e eval() retorna um objeto String em vez de avaliar a string.
+
+```javascript
+eval(new String("2 + 2")); //[String: '2 + 2']
+eval("2 + 2");             //4
+```
+
+```javascript
+const basicOp = (operation, value1, value2) => eval(value1+operation+value2)
+console.log(basicOp('+', 4, 7))     //11
+console.log(basicOp('-', 15, 18))   // -3)
+console.log(basicOp('*', 5, 5))     //25
+console.log(basicOp('/', 49, 7))    // 7
+```
+https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/eval
+---
+---
 ## 21/01/2021
 # reduce() 
 **Syntax** `array.reduce(function(total, currentValue, currentIndex, arr), initialValue)`
