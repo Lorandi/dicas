@@ -1,7 +1,7 @@
 ---
 ---
 
-## 21/01/2021
+## 22/01/2021
 # reval() 
 A função eval() computa um código JavaScript representado como uma string.
 Se você construir uma expressão aritmética como uma string, você pode usar eval() para calcular o resultado depois.
