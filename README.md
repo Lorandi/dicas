@@ -3,7 +3,7 @@
 
 ## 22/01/2021
 # map()
-O método map chama a função callback recebida por parâmetro para cada elemento do Array original, em ordem, e constrói um novo array com base nos retornos de cada chamada.
+O método **map()** chama a função callback recebida por parâmetro para cada elemento do Array original, em ordem, e constrói um novo array com base nos retornos de cada chamada.
 
 ```javascript
 const array = [ '1', '3', '2', '5', '3' ]
