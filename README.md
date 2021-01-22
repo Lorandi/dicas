@@ -208,6 +208,13 @@ hello = a => a + " World"; //se tive apenas um parâmetro, não precisa parênte
 console.log(hello ("Hello")); //Hello World!
 ```
 
+Na **Arow Function**, ela ira retornar o que está após o **=>** sem necessidade de usar **{}** ou return. Pode botar o bloco entre **()**. Se usar **{}**, necessário usar **return**.
+```javascript
+const isDivisible = (n, x, y) => (n % x == 0) && (n % y == 0)? true : false
+const isDivisible = (n, x, y) => ((n % x == 0) && (n % y == 0)? true : false)
+const isDivisible = (n, x, y) => {return (n % x == 0) && (n % y == 0)? true : false}
+```
+
 https://www.w3schools.com/js/js_arrow_function.asp
 
 https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Functions/Arrow_functions
