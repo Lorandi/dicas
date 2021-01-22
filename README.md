@@ -3,7 +3,7 @@
 
 ## 22/01/2021
 # map()
-O método **map()** chama a função callback recebida por parâmetro para cada elemento do Array original, em ordem, e constrói um novo array com base nos retornos de cada chamada.
+O método **map()** chama a função `callback` recebida por parâmetro para cada elemento do Array original, em ordem, e constrói um novo array com base nos retornos de cada chamada.
 
 ```javascript
 const array = [ '1', '3', '2', '5', '3' ]
@@ -11,8 +11,22 @@ const toNum = array.map(Number)
 console.log(toNum) //[1,3,2,5,3]
 ```
 
+```javascript
+var numbers = [1, 4, 9];
+var roots = numbers.map(Math.sqrt);
+// roots é [1, 2, 3], numbers ainda é [1, 4, 9]
+```
 
+```javascript
+const array = [1,3,2,5,3]
+const toStr = array.map(String)
+console.log(toStr) //[ '1', '3', '2', '5', '3' ]
+```
 
+```javascript
+const digitize = n => n.toString().split('').map(Number).reverse();
+console.log(digitize(35231)) //[1,3,2,5,3]
+```
 
 #
 # reval() 
