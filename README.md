@@ -27,6 +27,7 @@ console.log(toStr) //[ '1', '3', '2', '5', '3' ]
 const digitize = n => n.toString().split('').map(Number).reverse();
 console.log(digitize(35231)) //[1,3,2,5,3]
 ```
+https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/map
 
 #
 # reval() 
