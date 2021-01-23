@@ -30,7 +30,7 @@ console.log(digitize(35231)) //[1,3,2,5,3]
 https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/map
 
 #
-# reval() 
+# eval() 
 A função eval() computa um código JavaScript representado como uma string.
 Se você construir uma expressão aritmética como uma string, você pode usar eval() para calcular o resultado depois.
 Se o argumento de eval() não é uma string, eval() retorna o argumento inalterado. No exemplo a seguir, o construtor String é especificado, e eval() retorna um objeto String em vez de avaliar a string.
