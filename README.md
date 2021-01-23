@@ -2,6 +2,17 @@
 ---
 
 ## 22/01/2021
+# indexOf()
+O método indexOf() retorna o primeiro índice em que o elemento pode ser encontrado no array, retorna -1 caso o mesmo não esteja presente.
+**Sintaxe** `array.indexOf(elementoDePesquisa, [pontoInicial = 0])`
+**indexOf()** compara o  elementoDePesquisa com os elementos do Array usando igualdade estrita (o mesmo método usado pelo ===, ou triple-equals operator). 
+
+```javascript
+const findNeedle = haystack =>  haystack.indexOf('needle')
+console.log(findNeedle(['hay', 'junk', 'hay', 'hay', 'moreJunk', 'needle', 'randomJunk'])) //5
+```
+
+#
 # map()
 O método **map()** chama a função `callback` recebida por parâmetro para cada elemento do Array original, em ordem, e constrói um novo array com base nos retornos de cada chamada.
 
