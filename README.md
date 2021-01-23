@@ -3,6 +3,11 @@
 ---
 ## 23/01/2021
 # `continue` e `break`
+The `break` statement terminates the current loop, switch, or label statement and transfers program control to the statement following the terminated statement.
+
+A palavra chave `continue` termina a atual iteração do laço em que ele se encontra ou de um laço rotulado, e continua a execução deste laço com a próxima iteração.
+
+Diferentemente do  `break`, o `continue` não termina a execução do laço. 
 
 
 ---
