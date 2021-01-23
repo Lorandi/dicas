@@ -47,6 +47,8 @@ console.log(digitize(35231)) //[1,3,2,5,3]
 ```
 https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/map
 
+https://medium.com/@viniciusdacal/javascript-array-map-filter-e-reduce-tr%C3%AAs-m%C3%A9todos-para-manipula%C3%A7%C3%A3o-de-arrays-3fa9aebaf7fe
+
 #
 # eval() 
 A função eval() computa um código JavaScript representado como uma string.
