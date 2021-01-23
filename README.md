@@ -19,6 +19,11 @@ console.log(findNeedle(['hay', 'junk', 'hay', 'hay', 'moreJunk', 'needle', 'rand
 O método **map()** chama a função `callback` recebida por parâmetro para cada elemento do Array original, em ordem, e constrói um novo array com base nos retornos de cada chamada.
 
 ```javascript
+const maps = array => array.map(x => x * 2) 
+console.log(maps([1, 2, 3]))  //[2, 4, 6]);
+```
+
+```javascript
 const array = [ '1', '3', '2', '5', '3' ]
 const toNum = array.map(Number)
 console.log(toNum) //[1,3,2,5,3]
