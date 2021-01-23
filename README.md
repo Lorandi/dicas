@@ -4,7 +4,9 @@
 ## 22/01/2021
 # indexOf()
 O método indexOf() retorna o primeiro índice em que o elemento pode ser encontrado no array, retorna -1 caso o mesmo não esteja presente.
+
 **Sintaxe** `array.indexOf(elementoDePesquisa, [pontoInicial = 0])`
+
 **indexOf()** compara o  elementoDePesquisa com os elementos do Array usando igualdade estrita (o mesmo método usado pelo ===, ou triple-equals operator). 
 
 ```javascript
