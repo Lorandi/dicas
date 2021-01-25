@@ -1,6 +1,32 @@
 ---
 ---
 ## 25/01/2021
+# Array.from()
+
+O método `Array.from()` cria uma nova instância de um Array quando for passado um array-like ou um iterable object como argumento.
+
+**Sintaxe** `Array.from(arrayLike[, mapFn[, thisArg]])`
+
+```javascript
+function f() {
+    return Array.from(arguments);
+  }  
+  console.log(f(1, 2, 3)); // [1, 2, 3]
+  
+  var s = new Set(["foo"]);
+  console.log( Array.from(s));// ["foo"]  
+  
+  console.log( Array.from("foo")); // ["f", "o", "o"]
+  
+  console.log(Array.from([1, 2, 3], x => x + x));// [2, 4, 6]  
+  
+  // Gerando uma sequência de números
+  console.log(Array.from({length: 5}, (x, k) => k + 1));// [ 1, 2, 3, 4, 5]
+  ```
+  https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/from
+
+#
+
 # fill()
 
 O método fill() preenche todos os valores do array a partir do índice inicial a um índice final com um valor estático.
@@ -25,8 +51,6 @@ https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects
 
 #
 
-
----
 # concat()
 
 O método `concat()` retorna um novo array contendo todos os arrays ou valores passados como parâmetro
