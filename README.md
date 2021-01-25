@@ -51,15 +51,7 @@ https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects
 
 https://www.w3schools.com/jsref/jsref_replace.asp
 
-
-
-
-
-
-
-
-
-
+#
 
 # includes()
 O método `includes()` determina se um array contém um determinado elemento, retornando true ou false apropriadamente.
