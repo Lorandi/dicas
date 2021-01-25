@@ -1,3 +1,31 @@
+---
+---
+## 25/01/2021
+# concat()
+
+O método `concat()` retorna um novo array contendo todos os arrays ou valores passados como parâmetro
+
+**Sintaxe:** `array1.concat(array2, valor3, ..., valorN)`
+
+`concat()` cria um novo array unindo todos os elementos que foram passados como parâmetro, na ordem dada, para cada argumento e seus elementos (se o elemento passado for um array).
+
+
+```javascript
+var a = ["a"];
+var b = ["casa,carro"];
+var c = [3];
+var d = [8,7]
+const concatenados = (a,b,c,d) => a.concat(b,c,d);
+console.log(concatenados(a,b,c,d)); //[ 'a', 'casa,carro', 3, 8, 7 ]
+```
+
+```javascript
+const arrayPlusArray = (arr1, arr2) => arr1.concat(arr2).reduce((a,b)=>a+b)
+console.log(arrayPlusArray([1, 2, 3], [4, 5, 6]));    // 21
+console.log(arrayPlusArray([0, 0, 0], [4, 5, 6]));    // 15
+```
+
+
 
 ---
 ---
