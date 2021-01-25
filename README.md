@@ -1,6 +1,70 @@
 ---
 ---
 ## 25/01/2021
+
+# replace()
+The replace() method searches a string for a specified value, or a regular expression, and returns a new string where the specified values are replaced.
+
+Note: If you are replacing a value (and not a regular expression), only the first instance of the value will be replaced. To replace all occurrences of a specified value, use the global (g) modifier 
+
+**Sintaxe:** `str.replace(regexp|substr, newSubStr|function)`
+
+**Parâmetros**
+
+`regexp` Um objeto RegExp ou literal. A correspondência ou correspondências são substituídas por newSubStr ou o valor retornado pela function especificada.
+
+ `substr` Uma String que será substituída por newSubStr. Ele é tratado como uma string textual e não é interpretado como uma expressão regular. Apenas a primeira ocorrência será substituída.
+
+`newSubStr` A String que substitui a substr recebida do parâmetro #1. Uma série de padrões de substituições especiais são suportados. Veja a seção "Especificando uma string como parâmetro" abaixo.
+
+`function` A função (function) chamada cria uma nova substring (para ser colocada no lugar da substring recebida pelo parametro #1). Os argumentos fornececidos para essa função estão descritos na seção "Especificando uma função como parâmetro" mais abaixo.
+
+`flags` Uma string especificando uma combinação de flags de expressão regular. O uso do parâmetro flags no método String.prototype.replace() é não-padrão. Ao invés de usar este parâmetro, use um objeto RegExp com as flags correspondentes. O valor deste parâmetro deve ser uma string consistindo em um ou mais dos seguintes caracteres para afetar a operação, tais como descrito:
+
+`g` Combinação global.
+
+`i` Ignora diferenças entre maiúsculas e minúsculas.
+
+`m` Combinação em várias linhas.
+
+`y` Sticky
+
+Este método não muda o objeto String. Ele simplesmente retorna uma nova string.
+
+Para realizar uma pesquisa global e substituir, inclua a flag g na expressão regular ou se o primeiro parâmetro for uma string, inclua g no parâmetro flags.
+
+```javascript
+var frase = "O carro preto foi avistado";
+console.log(frase.replace(/preto/,"azul")); //O carro azul foi avistado
+```
+```javascript
+const DNAtoRNA = dna => dna.split("").map(x => x.replace("T","U")).join("")
+console.log(DNAtoRNA("TTTT"))       //"UUUU")
+console.log(DNAtoRNA("GCAT"))       //"GCAU")
+```
+
+```javascript
+const DNAtoRNA = dna => dna.replace(/T/g, 'U')
+console.log(DNAtoRNA("TTTT"))       //"UUUU")
+console.log(DNAtoRNA("GCAT"))       //"GCAU")
+```
+
+
+
+https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/String/replace
+
+https://www.w3schools.com/jsref/jsref_replace.asp
+
+
+
+
+
+
+
+
+
+
+
 # includes()
 O método `includes()` determina se um array contém um determinado elemento, retornando true ou false apropriadamente.
 
