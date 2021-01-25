@@ -1,6 +1,24 @@
 ---
 ---
 ## 25/01/2021
+# Math.min() e Math.max()
+Essas funções retornam os valores mínimos e máximos passados como parametro.
+
+```javascript
+
+var list = [4,6,2,1,9,63,-134,566]
+console.log(Math.min(...list)); //-134
+console.log(Math.max(...list)); //566
+
+console.log(Math.min(3,2,9,7)); //2
+console.log(Math.max(3,2,9,7)); //9
+
+var array = ["cachorro","gato","macaco"]
+console.log(Math.min(...array)); //Nan
+console.log(Math.max(...array)); //Nan
+```
+
+#
 
 # replace()
 The replace() method searches a string for a specified value, or a regular expression, and returns a new string where the specified values are replaced.
