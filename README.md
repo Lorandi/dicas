@@ -21,11 +21,7 @@ O método **fill** é um método mutável, ele irá mudar o objeto em si, e reto
 Array(3).fill(4);                // [4, 4, 4]
 [].fill.call({ length: 3 }, 4);  // {0: 4, 1: 4, 2: 4, length: 3}
 ```
-
-
-
-
-
+https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/fill
 
 #
 
