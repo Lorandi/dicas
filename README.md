@@ -1,6 +1,19 @@
 ---
----
 ## 25/01/2021
+# fill()
+O método fill() preenche todos os valores do array a partir do índice inicial a um índice final com um valor estático.
+
+**Sintaxe:** `arr.fill(valor[, ínicio = 0[, fim = this.length]])`
+O método **fill** pode receber até três argumentos valor, ínicio e fim. Os argumentos ínicio e fim são opcionais com valor padrão 0 (valor) e o tamanho do objeto (fim).
+O método #**fill** é um método mutável, ele irá mudar o objeto em si, e retorná-lo, não somente uma cópia do objeto.
+
+
+
+
+#
+
+
+---
 # concat()
 
 O método `concat()` retorna um novo array contendo todos os arrays ou valores passados como parâmetro
@@ -24,6 +37,7 @@ const arrayPlusArray = (arr1, arr2) => arr1.concat(arr2).reduce((a,b)=>a+b)
 console.log(arrayPlusArray([1, 2, 3], [4, 5, 6]));    // 21
 console.log(arrayPlusArray([0, 0, 0], [4, 5, 6]));    // 15
 ```
+https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/concat
 
 
 
