@@ -1,6 +1,25 @@
 ---
 ---
 ## 25/01/2021
+# includes()
+O método `includes()` determina se um array contém um determinado elemento, retornando true ou false apropriadamente.
+
+**Sintaxe**  `array.includes(searchElement[, fromIndex])`
+
+```javascript
+const check = (a,x) => a.includes(x);
+
+console.log(check([66, 101], 66))//true);
+console.log(check([80, 117, 115, 104, 45, 85, 112, 115], 45))//true);
+console.log(check(['t', 'e', 's', 't'], 'e'))//true);
+console.log(check(['what', 'a', 'great', 'kata'], 'kat'))//false);
+```
+
+
+
+
+
+#
 # Array.from()
 
 O método `Array.from()` cria uma nova instância de um Array quando for passado um array-like ou um iterable object como argumento.
