@@ -7,19 +7,7 @@ The replace() method searches a string for a specified value, or a regular expre
 
 Note: If you are replacing a value (and not a regular expression), only the first instance of the value will be replaced. To replace all occurrences of a specified value, use the global (g) modifier 
 
-**Sintaxe:** `str.replace(regexp|substr, newSubStr|function)`
-
-**Parâmetros**
-
-`regexp` Um objeto RegExp ou literal. A correspondência ou correspondências são substituídas por newSubStr ou o valor retornado pela function especificada.
-
- `substr` Uma String que será substituída por newSubStr. Ele é tratado como uma string textual e não é interpretado como uma expressão regular. Apenas a primeira ocorrência será substituída.
-
-`newSubStr` A String que substitui a substr recebida do parâmetro #1. Uma série de padrões de substituições especiais são suportados. Veja a seção "Especificando uma string como parâmetro" abaixo.
-
-`function` A função (function) chamada cria uma nova substring (para ser colocada no lugar da substring recebida pelo parametro #1). Os argumentos fornececidos para essa função estão descritos na seção "Especificando uma função como parâmetro" mais abaixo.
-
-`flags` Uma string especificando uma combinação de flags de expressão regular. O uso do parâmetro flags no método String.prototype.replace() é não-padrão. Ao invés de usar este parâmetro, use um objeto RegExp com as flags correspondentes. O valor deste parâmetro deve ser uma string consistindo em um ou mais dos seguintes caracteres para afetar a operação, tais como descrito:
+**Sintaxe:** `str.replace(exp, newExp)`
 
 `g` Combinação global.
 
@@ -47,6 +35,14 @@ console.log(DNAtoRNA("GCAT"))       //"GCAU")
 const DNAtoRNA = dna => dna.replace(/T/g, 'U')
 console.log(DNAtoRNA("TTTT"))       //"UUUU")
 console.log(DNAtoRNA("GCAT"))       //"GCAU")
+```
+
+```javascript
+const trocarNumeroComG = numero => numero.replace(/3/g, 7)
+console.log(trocarNumeroComG("133331")) //177771 com /g trocou todos
+
+const trocarNumeroSemG = numero => numero.replace(/3/, 7)
+console.log(trocarNumeroSemG("133331")) //173331 sem /g trocou só o primeiro
 ```
 
 
