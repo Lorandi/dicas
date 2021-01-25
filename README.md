@@ -1,6 +1,7 @@
 ---
 ## 25/01/2021
 # fill()
+
 O método fill() preenche todos os valores do array a partir do índice inicial a um índice final com um valor estático.
 
 **Sintaxe:** `arr.fill(valor[, ínicio = 0[, fim = this.length]])`
