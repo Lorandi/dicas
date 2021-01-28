@@ -1,5 +1,25 @@
 ---
 ---
+# 28/01/2021
+# startsWith() e endsWith()
+O método `startsWith()` determina se uma string começa e o método `endsWith()` se termina com determinados caracteres, retornando true ou false.
+
+```javascript
+const str1 = (string) => string.startsWith(["c"])
+console.log(str1("chocolate")) //true
+console.log(str1("bala")) //false
+```
+
+```javascript
+const str2 = (string) => string.endsWith(["a"])
+console.log(str2("chocolate")) //false
+console.log(str2("bala")) //true
+```
+
+
+
+---
+---
 ## 25/01/2021
 # Math.min() e Math.max()
 Essas funções retornam os valores mínimos e máximos passados como parametro.
