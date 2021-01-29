@@ -1,5 +1,23 @@
 ---
 ---
+# 29/01/2021
+# apply()
+O método `apply()` chama uma função com um dado valor this e arguments providos como uma array (ou um objeto parecido com um array).
+Nota: A sintaxe desta função é quase idêntica a essa da call(), a diferença é que call() aceita uma  lista de argumentos, enquanto apply() aceita um array de argumentos.
+
+```javascript
+function highAndLow(numbers){
+  numbers = numbers.split(' ').map(Number);
+  return Math.max.apply(0, numbers) + ' ' + Math.min.apply(0, numbers);
+}
+console.log(highAndLow("1 2 3 4 5"))     // "5 1"
+console.log(highAndLow("1 2 -3 4 5"))    // "5 -3"
+console.log(highAndLow("1 9 3 4 -5"))    // "9 -5"
+```
+https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Function/Apply
+
+---
+---
 # 28/01/2021
 # startsWith() e endsWith()
 O método `startsWith()` determina se uma string começa e o método `endsWith()` se termina com determinados caracteres, retornando true ou false.
