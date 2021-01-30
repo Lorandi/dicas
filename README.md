@@ -11,9 +11,9 @@ console.log(numbers.toString())
 console.log(('' + numbers))
 ```
 #
-### string => numbervar
+### string => number
 ```javascript
-string = '4568';
+var string = '4568';
 console.log(Number(string))
 console.log(+string)
 console.log(string = +string)
