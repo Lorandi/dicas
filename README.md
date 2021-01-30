@@ -3,13 +3,21 @@
 # 30/01/2021
 # Transformar um número em string e ao contrário
 
-### string => number
+### number => string
 ```javascript
 var numbers = 4568;
+console.log(String(numbers))
 console.log(numbers.toString())
 console.log(('' + numbers))
 ```
-
+#
+### string => numbervar
+```javascript
+string = '4568';
+console.log(Number(string))
+console.log(+string)
+console.log(string = +string)
+```
 
 
 ---
