@@ -1,5 +1,18 @@
 ---
 ---
+#
+# Transformar um número em string e ao contrário
+### string => number
+´´´javascript
+var numbers = 4568;
+console.log(numbers.toString())
+console.log(('' + numbers))
+```
+
+
+
+---
+---
 # 29/01/2021
 # apply()
 O método `apply()` chama uma função com um dado valor this e arguments providos como uma array (ou um objeto parecido com um array).
