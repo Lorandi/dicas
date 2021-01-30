@@ -4,7 +4,6 @@
 # Transformar um número em string e ao contrário
 
 ### string => number
-
 ```javascript
 var numbers = 4568;
 console.log(numbers.toString())
