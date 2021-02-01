@@ -1,5 +1,55 @@
 ---
 ---
+# 01/02/2021
+# isFiniete(), isInteger(), isNaN()
+
+### isFinite()
+The `Number.isFinite()` method determines whether a value is a finite number. Retorna um Bollean
+```javascript
+Number.isFinite(-1.23) //true
+Number.isFinite(5-2) //true
+Number.isFinite(0) //true
+Number.isFinite('123') //false
+Number.isFinite('Hello') //false
+```
+
+### isInteger()
+O método Number.isInteger() determina se o valor passado é um inteiro. Retorna um Bollean
+`Number.isInteger(value)`
+
+```javascript
+Number.isInteger(1);         // true
+Number.isInteger(-100000);   // true
+Number.isInteger(0.1);       // false
+Number.isInteger(Math.PI);   // false
+```
+
+### isNaN()
+The `Number.isNaN()` method determines whether a value is NaN (Not-A-Number).
+This method returns true if the value is of the type Number, and equates to NaN. Otherwise it returns false.
+
+```javascript
+Number.isNaN(123) //false
+Number.isNaN(-1.23) //false
+Number.isNaN(5-2) //false
+Number.isNaN(0) //false
+Number.isNaN('123') //false
+Number.isNaN('Hello') //false
+Number.isNaN('2005/12/12') //false
+Number.isNaN('') //false
+Number.isNaN(true) //false
+Number.isNaN(undefined) //false
+Number.isNaN('NaN') //false
+Number.isNaN(NaN) //true
+Number.isNaN(0 / 0) //true
+```
+
+https://www.w3schools.com/jsref/jsref_obj_number.asp
+https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Number/isInteger
+
+
+---
+---
 # 30/01/2021
 # Transformar um número em string e ao contrário
 
