@@ -1,6 +1,22 @@
 ---
 ---
 # 01/02/2021
+# match()
+O método `match()` retorna uma correspondência entre uma string com uma expressão regular.
+
+
+```javascript
+var str = "The rain in SPAIN stays mainly in the plain"; 
+console.log(str.match(/ain/g).length) //3
+console.log(str.match(/ain/g)) //[ 'ain', 'ain', 'ain' ]
+console.log(str.match(/ain/gi)) //[ 'ain', 'AIN', 'ain', 'ain' ]
+```
+
+https://www.w3schools.com/jsref/jsref_match.asp
+https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/String/match
+#
+
+
 # isFiniete(), isInteger(), isNaN()
 
 ### isFinite()
