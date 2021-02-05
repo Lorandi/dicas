@@ -9,7 +9,19 @@ Com ela podemos lidar com as seguintes situações:
  - substituição;
  - validação de formatos;
  - filtragem de informações
-
+ 
+ Pode ser feito com construtor `const regex = new RegExp('dog','gi')` ou de forma literal `const regex = /dog/gi`
+ 
+### Flags
+Elas adicionam comportamentos adicionais a nossas regras, como:
+g - indicar achar todas as ocorrências da regex
+i - ignora case sensitive
+m - multilinha, lida com caracteres de inicio e fim (^ e $) ao operar em múltiplas linhas.
+ 
+ 
+ 
+ 
+https://medium.com/@alexandreservian/regex-um-guia-pratico-para-express%C3%B5es-regulares-1ac5fa4dd39f
 
 ---
 ---
