@@ -28,9 +28,26 @@ Elas adicionam comportamentos adicionais a nossas regras, como:
  ## Métodos
  ### test
  Um método RegExp que testa uma correspondência em uma string. Retorna true ou false.
+  ```javascript
+ const validatePIN = s => /^(\d{4}|\d{6})$/.test(s)
+ console.log(validatePIN("0000"))    //true
+ console.log(validatePIN("12345"))   //false
+ console.log(validatePIN("000000"))  //true
+ console.log(validatePIN(".00000"))  //false
+ ```
  
  ### match
  Um método String que executa uma pesquisa por uma correspondência em uma string. Retorna uma array de informações ou null caso não haja uma correspondência.
+ 
+ ```javascript
+ const validatePIN = s => s.match("^\\d{4}$") ? true : s.match("^\\d{6}$") ? true : false
+ console.log(validatePIN("1234"))  //true
+ console.log(validatePIN("1"))     //false
+ console.log(validatePIN("123"))   //false
+ console.log(validatePIN("a234"))  //false
+ console.log(validatePIN("0000"))  //true
+ ```
+ 
  
  ### replace
  Um método String que executa uma pesquisa por uma correspondência em uma string, e substitui a substring correspondênte por uma substring de substituição.
@@ -38,9 +55,7 @@ Elas adicionam comportamentos adicionais a nossas regras, como:
  ### exec
  Um método RegExp  que execute uma pesquisa por uma correspondência em uma string. Retorna um array de informações.
  
- ### test
- Um método RegExp que testa uma correspondência em uma string. Retorna true ou false.
- 
+
  ### search
  Um método String que testa uma correspondência em uma string. Retorna o indice da correspondência ou -1 se o teste falhar.
  
@@ -52,12 +67,11 @@ Elas adicionam comportamentos adicionais a nossas regras, como:
  
  
  
- 
- 
- 
- 
+ https://github.com/alexandreservian/regex-cheat-sheet
  
 https://medium.com/@alexandreservian/regex-um-guia-pratico-para-express%C3%B5es-regulares-1ac5fa4dd39f
+
+https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Regular_Expressions
 
 ---
 ---
