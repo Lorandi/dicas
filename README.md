@@ -18,6 +18,19 @@ Elas adicionam comportamentos adicionais a nossas regras, como:
  - `i` - ignora case sensitive
  - `m` - multilinha, lida com caracteres de inicio e fim (`^` e `$`) ao operar em múltiplas linhas.
  
+ ### Conjuntos “ [ ] ”
+ Com os conjuntos dizemos a regex que uma determinada casa pode ter diversos valores para dar match.
+ `[/[em²]/gi]` ,  `/[a-z]/` (adiciona range - intervalos) ,  `/[0-9]/`
+ Range obedece a mesma ordem da tabela Unicode, sendo assim regex como [a-Z] ou [4-1] produziram erro.
+ 
+ Temos também os conjuntos negados, que como o nome sugere, dar match em tudo que não faça parte do conjunto. Para definí-lo iniciamos a regra do conjunto com `^` , por exemplo `[^a-z]` que aceita tudo que não seja entre a à z. `/[^aeiouí]/gi` aceita tudo que não são as vogais
+ 
+ ### Métodos
+ ## test 
+ 
+ 
+ 
+ 
  
  
  
