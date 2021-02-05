@@ -14,9 +14,9 @@ Com ela podemos lidar com as seguintes situações:
  
 ### Flags
 Elas adicionam comportamentos adicionais a nossas regras, como:
-g - indicar achar todas as ocorrências da regex
-i - ignora case sensitive
-m - multilinha, lida com caracteres de inicio e fim (^ e $) ao operar em múltiplas linhas.
+ - `g` - indicar achar todas as ocorrências da regex
+ - `i` - ignora case sensitive
+ - `m` - multilinha, lida com caracteres de inicio e fim (`^` e `$`) ao operar em múltiplas linhas.
  
  
  
