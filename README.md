@@ -63,9 +63,11 @@ Elas adicionam comportamentos adicionais a nossas regras, como:
  Um método String  que usa uma expressão regular ou uma string fixa para quebrar uma string dentro de um array de substrings.
  
  
+ ### Significado dos caracteres especiais nas expressões regulares 
  
+ https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/RegExp
  
- 
+ # 
  
  https://github.com/alexandreservian/regex-cheat-sheet
  
