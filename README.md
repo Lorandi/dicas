@@ -1,5 +1,18 @@
 ---
 ---
+# 05/02/2021
+# Regex
+
+Uma expressão regular é um método formal de se especificar um padrão de texto.
+Com ela podemos lidar com as seguintes situações:
+ - procura;
+ - substituição;
+ - validação de formatos;
+ - filtragem de informações
+
+
+---
+---
 # 01/02/2021
 # match()
 O método `match()` retorna uma correspondência entre uma string com uma expressão regular.
