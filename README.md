@@ -25,8 +25,31 @@ Elas adicionam comportamentos adicionais a nossas regras, como:
  
  Temos também os conjuntos negados, que como o nome sugere, dar match em tudo que não faça parte do conjunto. Para definí-lo iniciamos a regra do conjunto com `^` , por exemplo `[^a-z]` que aceita tudo que não seja entre a à z. `/[^aeiouí]/gi` aceita tudo que não são as vogais
  
- ### Métodos
- ## test 
+ ## Métodos
+ ### test
+ Um método RegExp que testa uma correspondência em uma string. Retorna true ou false.
+ 
+ ### match
+ Um método String que executa uma pesquisa por uma correspondência em uma string. Retorna uma array de informações ou null caso não haja uma correspondência.
+ 
+ ### replace
+ Um método String que executa uma pesquisa por uma correspondência em uma string, e substitui a substring correspondênte por uma substring de substituição.
+ 
+ ### exec
+ Um método RegExp  que execute uma pesquisa por uma correspondência em uma string. Retorna um array de informações.
+ 
+ ### test
+ Um método RegExp que testa uma correspondência em uma string. Retorna true ou false.
+ 
+ ### search
+ Um método String que testa uma correspondência em uma string. Retorna o indice da correspondência ou -1 se o teste falhar.
+ 
+ ### split
+ Um método String  que usa uma expressão regular ou uma string fixa para quebrar uma string dentro de um array de substrings.
+ 
+ 
+ 
+ 
  
  
  
