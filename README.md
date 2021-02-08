@@ -1,6 +1,6 @@
 ---
 ---
-#08/02/2021
+# 08/02/2021
 # parseInt()
 A função parseInt() analisa um argumento string e retorna um inteiro na base especificada.
 
