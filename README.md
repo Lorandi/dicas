@@ -1,5 +1,28 @@
 ---
 ---
+#08/02/2021
+# parseInt()
+A função parseInt() analisa um argumento string e retorna um inteiro na base especificada.
+
+`parseInt(string, base);`
+## string
+O valor a analisar. Se o argumento string não for uma string, então o valor é convertido para uma string (utilizando a operação abstrata ToString). Os espaços em branco na string são ignorados.
+
+## base
+Um inteiro entre 2 e 36 que representa a base da string (sistemas numéricos matemáticos) mencionada no parâmetro anterior. Base `2` para sistema numérico binário e `10` para decimal.
+
+
+Binário para decimal
+```javascript
+const binaryArrayToNumber = arr => parseInt(arr, 2)
+console.log(binaryArrayToNumber('0010'))     //2
+console.log(binaryArrayToNumber('1111'))     //15
+console.log(binaryArrayToNumber('0110'))     //6
+```
+https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/parseInt
+
+---
+---
 # 05/02/2021
 # Regex
 
