@@ -500,14 +500,14 @@ https://www.w3schools.com/jsref/jsref_reduce.asp
 https://www.lewagon.com/pt-BR/blog/array-reduce-aprenda-usar-metodo-javascript
 
 #
-# .filter(Boolean)
-Retira de uma lista os elementos que são falsy como empty string, undefined, null ou false.
-O método filter() cria um novo array com todos os elementos que passaram no teste implementado pela função fornecida.
-**Sintaxe:** `var newArray = arr.filter(callback[, thisArg])`
+
+# .filter()
+O método `filter()` cria um novo array com todos os elementos que passaram no teste implementado pela função fornecida.
+
 ```javascript
-var arrayBugado = [undefined, "bom", null, 5, true, "certo", "errado", false,NaN ];
-var arrayArrumado = arrayBugado.filter(Boolean);
-console.log(arrayArrumado) //[ 'bom', 5, true, 'certo', 'errado' ]
+const friend = friends => friends.filter(friend => friend.length == 4);
+console.log(friend(["Ryan", "Kieran", "Mark"]))     //["Ryan", "Mark"]);
+console.log(friend(["Ryan", "Jimmy", "123", "4", "Cool Man"]))      //["Ryan"]);
 ```
 
 ```javascript
@@ -522,6 +522,19 @@ var filtered = [12, 5, 8, 130, 44].filter(isBigEnough);
 const removeEveryOther = arr => arr.filter((elem, index) => index % 2 === 0);
 console.log(removeEveryOther([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]))//[1, 3, 5, 7, 9]);
 ```
+
+
+## .filter(Boolean)
+Retira de uma lista os elementos que são falsy como empty string, undefined, null ou false.
+O método filter() cria um novo array com todos os elementos que passaram no teste implementado pela função fornecida.
+**Sintaxe:** `var newArray = arr.filter(callback[, thisArg])`
+```javascript
+var arrayBugado = [undefined, "bom", null, 5, true, "certo", "errado", false,NaN ];
+var arrayArrumado = arrayBugado.filter(Boolean);
+console.log(arrayArrumado) //[ 'bom', 5, true, 'certo', 'errado' ]
+```
+
+
 
 
 https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/filtro
