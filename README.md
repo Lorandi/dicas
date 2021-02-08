@@ -1,6 +1,18 @@
 ---
 ---
 # 08/02/2021
+# toString()
+O método `toString()` retorna uma string representando o objeto.
+
+Decimal para binário
+```javascript
+const addBinary = value => value.toString(2)     
+console.log(addBinary(3)) //11
+console.log(addBinary(12)) //1100
+console.log(addBinary(45)) //101101
+```
+
+#
 # parseInt()
 A função parseInt() analisa um argumento string e retorna um inteiro na base especificada.
 
