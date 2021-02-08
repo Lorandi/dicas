@@ -12,6 +12,16 @@ console.log(addBinary(12)) //1100
 console.log(addBinary(45)) //101101
 ```
 
+Decimal para hexadecimal
+```javascript
+const addBinary = value => value.toString(16)     
+console.log(addBinary(3))  //3
+console.log(addBinary(12)) //c
+console.log(addBinary(45)) //2d
+```
+
+
+
 #
 # parseInt()
 A função parseInt() analisa um argumento string e retorna um inteiro na base especificada.
