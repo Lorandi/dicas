@@ -1,5 +1,33 @@
 ---
 ---
+# 09/02/2021
+# .sbstr()
+O método substr() retorna uma parte da string, começando no índice especificado e estendendo-se por um determinado número de caracteres posteriormente.
+
+```javascript
+const str = 'Mozilla';
+console.log(str.substr(1, 2)); //"oz"
+console.log(str.substr(2)); //"zilla"
+```
+**Sintaxe:** `str.substr(start[, length])`
+
+```javascript
+const solution = (a,b) => b === a.substr(a.length - b.length);   
+console.log(solution('abcde', 'cde'))//true
+console.log(solution('abcde', 'abc'))//false
+console.log(solution('abc', 'c'))//true
+console.log(solution('abc', 'd'))//false
+```
+
+
+
+
+https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/String/substr
+
+
+
+---
+---
 # 08/02/2021
 # toString()
 O método `toString()` retorna uma string representando o objeto.
