@@ -1,5 +1,26 @@
 ---
 ---
+# 12/02/2021
+# .splice()
+O método splice() altera o conteúdo de uma lista, adicionando novos elementos enquanto remove elementos antigos.
+
+**Sintaxe:** `array.splice(index, howmany, item1, ....., itemX)`
+ - index	Required. An integer that specifies at what position to add/remove items, Use negative values to specify the position from the end of the array
+ - howmany	Optional. The number of items to be removed. If set to 0, no items will be removed
+ - item1, ..., itemX	Optional. The new item(s) to be added to the array
+
+```javascript
+var newString = [1,2, 3, 4, 5]
+var removed = newString.splice(3, 1) //retirar [1] o elemento na posição [3]
+console.log(removed)   // [4]
+console.log(newString) //[ 1, 2, 3, 5 ]
+```
+https://www.w3schools.com/jsref/jsref_splice.asp
+
+https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/splice
+
+---
+---
 # 09/02/2021
 # .sbstr()
 O método substr() retorna uma parte da string, começando no índice especificado e estendendo-se por um determinado número de caracteres posteriormente.
