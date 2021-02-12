@@ -11,9 +11,9 @@ O método splice() altera o conteúdo de uma lista, adicionando novos elementos 
 
 ```javascript
 var newString = [1,2, 3, 4, 5]
-var removed = newString.splice(3, 1) //retirar [1] o elemento na posição [3]
+var removed = newString.splice(3, 1,"batata") //retirar [1] elemento na posição [3] e botar "batata" no lugar
 console.log(removed)   // [4]
-console.log(newString) //[ 1, 2, 3, 5 ]
+console.log(newString) //[ 1, 2, 3, 'batata', 5 ]
 ```
 https://www.w3schools.com/jsref/jsref_splice.asp
 
