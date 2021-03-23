@@ -15,6 +15,24 @@ O método push() adiciona um ou mais elementos ao final de um array e retorna o 
 var arr = ["casa", "carro"];
 arr.push("terrreno")  //["casa", "carro", "terreno"]
 ```
+#
+
+# .pop()
+O método pop() remove o último elemento de um array e retorna aquele elemento.
+```javascript
+var arr = ["casa", "carro", "terreno"];
+arr.pop()  //["casa", "carro"]
+```
+#
+
+# .shift()
+O método shift()remove o primeiro elemento de um array e retorna esse elemento. 
+```javascript
+var arr = ["casa", "carro", "terreno"];
+arr.shift()  //["carro", "terreno"]
+```
+
+
 ---
 ---
 # 12/02/2021
