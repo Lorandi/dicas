@@ -1,5 +1,22 @@
 ---
 ---
+# 23/03/2021
+# .unshift()
+O método unshift() adiciona um ou mais elementos no início de um array e retorna o número de elementos (propriedade length) atualizado.
+```javascript
+var arr = ["casa", "carro"];
+arr.unshift("terrreno")  //["terreno","casa", "carro"]
+```
+#
+
+# .push()
+O método push() adiciona um ou mais elementos ao final de um array e retorna o novo comprimento desse array.
+```javascript
+var arr = ["casa", "carro"];
+arr.push("terrreno")  //["casa", "carro", "terreno"]
+```
+---
+---
 # 12/02/2021
 # .splice()
 O método splice() altera o conteúdo de uma lista, adicionando novos elementos enquanto remove elementos antigos.
